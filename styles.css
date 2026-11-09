@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f7fc;
+    color: #1e2a3e;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #1e2a3e;
+    color: #fff;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-info h1 {
+    font-size: 1.5rem;
+    color: #c9a03d;
+}
+
+.header-info p {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #c9a03d;
+}
+
+.hero {
+    background: linear-gradient(135deg, #1e2a3e, #34495e);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #c9a03d;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+/* ACÁ AMPLIAMOS EL ANCHO PARA QUE ENTREN LAS 3 COLUMNAS */
+.vehiculos {
+    max-width: 1100px; 
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2rem;
+    color: #1e2a3e;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #c9a03d;
+    display: block;
+    width: fit-content;
+    margin: 0 auto 2rem auto;
+    padding-bottom: 0.5rem;
+}
+
+/* ACÁ PONEMOS LAS 3 COLUMNAS */
+.grid-autos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem; 
+    align-items: start; 
+}
+
+.auto-card {
+    background: #fff;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.auto-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ACÁ AJUSTAMOS LA ALTURA PARA QUE NO SEAN TAN ALTAS */
+.auto-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.auto-info {
+    padding: 1.2rem;
+}
+
+.auto-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #1e2a3e;
+}
+
+.auto-info p {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.precio {
+    display: inline-block;
+    background: #1e2a3e;
+    color: #c9a03d;
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.contacto {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.contacto-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #6c757d;
+}
+
+.formulario {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.formulario label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 0.7rem;
+    border: 1px solid #d0d5dd;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #c9a03d;
+}
+
+.formulario button {
+    margin-top: 1rem;
+    background: #1e2a3e;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background: #c9a03d;
+    color: #1e2a3e;
+}
+
+.datos-contacto {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+}
+
+.datos-contacto h3 {
+    color: #1e2a3e;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.datos-contacto ul {
+    list-style: none;
+}
+
+.datos-contacto li {
+    padding: 0.4rem 0;
+    color: #495057;
+}
+
+.footer {
+    background: #1e2a3e;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer p:first-child {
+    color: #c9a03d;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.footer p:last-child {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+/* RESPONSIVE: Se achica a 2 columnas en tablets y 1 en celulares */
+@media (max-width: 992px) {
+    .grid-autos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-autos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilo especial para la foto del Porsche vertical */
+.imagen-porsche {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
