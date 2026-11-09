@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Concesionaria San Andrés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-info">
+            <h1>Concesionaria San Andrés</h1>
+            <p>San Andrés 1661, Buenos Aires</p>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto">
+            <h2 class="titulo-seccion">Contactanos</h2>
+            <p class="contacto-intro">Completá el formulario y te respondemos a la brevedad.</p>
+
+            <!-- ACÁ ESTÁ LA CORRECCIÓN: Le sacamos el action y el method -->
+            <form class="formulario">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="11-2456-5678">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿Qué auto te interesa?"></textarea>
+
+                <button type="submit">Enviar consulta</button>
+            </form>
+
+            <div class="datos-contacto">
+                <h3>También podés encontrarnos en:</h3>
+                <ul>
+                    <li>📞 Teléfono: 11-2456-5678</li>
+                    <li>📸 Instagram: @concesionaria_sanAndres</li>
+                    <li>✉️ Email: ventas@sanandres.com</li>
+                    <li>📍 Dirección: San Andrés 1661, Buenos Aires</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Concesionaria San Andrés — Excelencia automotriz</p>
+        <p>Financiación a medida · Garantía extendida · Servicio 5 estrellas</p>
+    </footer>
+
+</body>
+</html>
