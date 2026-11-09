@@ -60,7 +60,7 @@ body {
     letter-spacing: 2px;
 }
 
-/* ACÁ AMPLIAMOS EL ANCHO PARA QUE ENTREN LAS 3 COLUMNAS */
+
 .vehiculos {
     max-width: 1100px; 
     margin: 3rem auto;
@@ -102,8 +102,6 @@ body {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
-
-/* ACÁ AJUSTAMOS LA ALTURA PARA QUE NO SEAN TAN ALTAS */
 .auto-card img {
     width: 100%;
     height: 180px;
@@ -240,7 +238,7 @@ body {
     color: #aaa;
 }
 
-/* RESPONSIVE: Se achica a 2 columnas en tablets y 1 en celulares */
+
 @media (max-width: 992px) {
     .grid-autos {
         grid-template-columns: repeat(2, 1fr);
@@ -253,7 +251,6 @@ body {
     }
 }
 
-/* Estilo especial para la foto del Porsche vertical */
 .imagen-porsche {
     width: 100%;
     height: 180px;
